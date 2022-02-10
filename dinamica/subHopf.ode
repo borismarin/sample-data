@@ -1,4 +1,4 @@
-# subcritical Hopf scenario, Nap - K model
+# Cenário Hopf subcrítica, modelo Nap - K
 
 dv/dt = (I - g_Na*minf(V)*(V-V_Na) - g_K*n*(V-V_K) - g_leak*(V-V_leak) + s(t))/C
 dn/dt = (ninf(V)-n)/tau
@@ -18,7 +18,7 @@ param vhalf_ninf=-45, tau=1
 param k_ninf=5
 param C=1
 
-# double pulse stimulus 
+# estímulo: pulso duplo
 param s1=0, t1=10, t2=15, 
 param s2=0, t3=20, t4=25 
 s(t)=s1*heav(t-t1)*heav(t2-t)+s2*heav(t-t3)*heav(t4-t)
