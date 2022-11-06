@@ -1,0 +1,15 @@
+id,type,description
+IDADEMAE,bigint,Idade da mãe em anos
+ESTCIVMAE,bigint,Estado civil conforme a tabela: 1: Solteira 2: Casada 3: Viuva 4: Separado judicialmente/Divorciado 5: União consensual (versões anteriores) 9: Ignorado
+ESCMAE,bigint,Escolaridade anos de estudo concluídos: 1: Nenhuma 2: 1 a 3 anos 3: 4 a 7 anos 4: 8 a 11 anos 5: 12 e mais 9: Ignorado
+RACACOR,bigint,Raça/Cor: 1:Branca 2:Preta 3:Amarela 4: Parda 5: Indígena
+res_MUNNOME,text,Nome do município de residência
+CODOCUPMAE,text,Ocupação conforme a Classificação Brasileira de Ocupações (CBO-2002)
+GESTACAO,bigint,Semanas de gestação conforme a tabela: 9: Ignorado 1: Menos de 22 semanas 2: 22 a 27 semanas 3: 28 a 31 semanas 4: 32 a 36 semanas 5: 37 a 41 semanas 6: 42 semanas e mais
+CONSULTAS,bigint,Número de consultas de pré-natal: 1: Nenhuma 2: de 1 a 3 3: de 4 a 6 4: 7 e mais 9: Ignorado
+MESPRENAT,text,Mês de gestação em que iniciou o pré‐natal
+APGAR1,text,Apgar no primeiro minuto 00 a 10
+APGAR5,text,Apgar no quinto minuto 00 a 10
+PESO,text,Peso ao nascer em gramas
+IDANOMAL,bigint,Anomalia congênita: 9:Ignorado 1:Sim 2:Não
+parto_prematuro,bigint,Indica a prematuridade do nascimento. 0: não há indícios de prematuridade; 1: há indício de prematuridade dado pela idade gestacional (GESTACAO<=4); 2: há indício de prematuridade dado pelo peso ao nascer (PESO<2500); 3: a idade gestacional e o peso ao nascer indicam prematuridade
